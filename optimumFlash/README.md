@@ -47,9 +47,12 @@ Run on [colab](../notebook/gpt2_wikisource.ipynb) or [alter](https://colab.resea
 hyperarmeters : seq_len = 128,batch_size = 32
 ![gpt2_wikisource](../scr/img/gpt2_wikisource.png)   
 
-## model: gpt2 , dataset: [wikisource](https://huggingface.co/datasets/wikimedia/wikisource/viewer/20231201.en) , 
+## model: gpt2 , dataset: [wikisource](https://huggingface.co/datasets/wikimedia/wikisource/viewer/20231201.en) 
+Run on [colab](../notebook/gpt2_wiki_langua_float16.ipynb) or [alter](https://colab.research.google.com/drive/14JfxqBp8779X9JIh9cH29gbNC28trf9U?usp=sharing) , logging by [wandb](https://wandb.ai/htx_ai_101/gpt2_wiki?workspace=user-pepoo20)   
 hyperameters: seq_len = 512, batch_size = 4, dtype = torch.float16
-![gpt2_wikisource_512_float16](../scr/img/gpt2_wikisource_float16.png)
+![gpt2_wikisource_512_float16](../scr/img/gpt2_wikisource_float16.png)  
+
+
 
 But the validation loss got affected.   
 Normal:

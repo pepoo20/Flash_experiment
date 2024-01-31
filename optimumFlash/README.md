@@ -47,11 +47,21 @@ Run on [colab](../notebook/gpt2_wikisource.ipynb) or [alter](https://colab.resea
 hyperarmeters : seq_len = 128,batch_size = 32
 ![gpt2_wikisource](../scr/img/gpt2_wikisource.png)   
 
+## model: gpt2 , dataset: [wikisource](https://huggingface.co/datasets/wikimedia/wikisource/viewer/20231201.en) , 
+hyperameters: seq_len = 512, batch_size = 4, dtype = torch.float16
+![gpt2_wikisource_512_float16](../scr/img/gpt2_wikisource_float16.png)
+
+But the validation loss got affected.   
+Normal:
+![non_flash](../scr/img/gpt2float16_non.png)
+
+Flash:
+![flash](../scr/img/gpt2float16_flash.png)
 
 
 ## model : distilbert-base-uncased, dataset: [wikitext](https://huggingface.co/datasets/wikitext/viewer/wikitext-2-raw-v1)
 
-#### Run on [colab](../notebook/distilBertwiki.ipynb) or [alter](https://colab.research.google.com/drive/1MsebVKnBZGLpfysgUL3MysM27tdl-qfJ?usp=sharing), logging by [wandb] (https://wandb.ai/htx_ai_101/distilbert_wiki)
+Run on [colab](../notebook/distilBertwiki.ipynb) or [alter](https://colab.research.google.com/drive1MsebVKnBZGLpfysgUL3MysM27tdl-qfJ?usp=sharing) , logging by [wandb](https://wandb.ai/htx_ai_101/distilbert_wiki)  
 
 hyperarmeters : seq_len = 128,batch_size = 8 (default huggingface)
 ![distilbert](../scr/img/distilbert_table.png)

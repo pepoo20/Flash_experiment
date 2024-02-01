@@ -64,8 +64,12 @@ Flash:
 
 ## model : distilbert-base-uncased, dataset: [wikitext](https://huggingface.co/datasets/wikitext/viewer/wikitext-2-raw-v1)
 
-Run on [colab](../notebook/distilBertwiki.ipynb) or [alter](https://colab.research.google.com/drive1MsebVKnBZGLpfysgUL3MysM27tdl-qfJ?usp=sharing) , logging by [wandb](https://wandb.ai/htx_ai_101/distilbert_wiki)  
+Run on [colab](../notebook/distilBertwiki.ipynb) or [alter](https://colab.research.google.com/drive/1MsebVKnBZGLpfysgUL3MysM27tdl-qfJ) , logging by [wandb]
+<!-- (https://wandb.ai/htx_ai_101/distilbert_wiki)   -->
 
-hyperarmeters : seq_len = 128,batch_size = 8 (default huggingface)
-![distilbert](../scr/img/distilbert_table.png)
+![distilbert_128](../scr/img/distilbert_seq_128.png)
+
+![distilbert_256](../scr/img/distilbert_seq_256.png)
+
+![distilbert_512](../scr/img/distilbert_seq_512.png)
 
